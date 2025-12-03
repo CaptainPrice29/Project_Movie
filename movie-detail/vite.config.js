@@ -28,21 +28,4 @@ export default defineConfig({
       },
     },
   },
-  // Add assetsInclude to handle xlsx files
-  assetsInclude: ['**/*.xlsx'],
-  // Custom build configuration
-  build: {
-    assetsInclude: ["**/*.csv", "**/*.xlsx"], // add "**/*.xlsx" here
-    rollupOptions: {
-      output: {
-        // This ensures xlsx files are properly handled in build
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name && assetInfo.name.endsWith('.xlsx')) {
-            return 'assets/[name]-[hash][extname]';
-          }
-          return 'assets/[name]-[hash][extname]';
-        }
-      }
-    }
-  }
 });
