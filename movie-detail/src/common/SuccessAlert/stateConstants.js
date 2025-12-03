@@ -1,0 +1,6 @@
+export const MESSAGE = 'message'
+export const OPEN = 'open'
+export const ALERT_TYPE = 'alertType'
+export const TRANSLATE = 'translate'
+export const REQUEST_ID = 'requestId'
+export const CUSTOM_MESSAGE = 'customMessage'
